@@ -1,15 +1,9 @@
-var currentdate = new Date();
 const cardEl = document.querySelector('.hb-card')
 const wrongEl = document.querySelector('.hb-wrongTime')
 const audio = document.querySelector('.hb-audio')
 const cameraEl = document.querySelector('.hb-story')
 const buttonEl = document.querySelector('.hb-button')
 const inputEl = document.querySelector('.hb-inputName')
-let day = currentdate.getDate()
-let month = currentdate.getMonth() + 1
-let year = currentdate.getFullYear()
-let hours = currentdate.getHours()
-let minutes = currentdate.getMinutes()
 let nameEl = false
 
 function congrats() {
@@ -25,7 +19,7 @@ function getValue() {
     }
 }
 function showHbdCard() {
-    if (day === 8 && month === 12) {
+    if (new Date().getDate() === 8 && new Date().getMonth() + 1 === 12) {
         if (nameEl == true) {
             cardEl.classList.add('hb-open')
             cardEl.classList.remove('hb-card')
@@ -40,7 +34,7 @@ function showHbdCard() {
         }
 
     } else {
-        wrongEl.innerHTML = "It's Too early please wait 8 December"
+        wrongEl.innerHTML = "It's Too early please wait until 8 December"
         wrongEl.style.display = 'flex'
     }
 

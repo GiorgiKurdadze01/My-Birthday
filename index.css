@@ -11,6 +11,7 @@ body {
 }
 
 body h1 {
+    text-align: center;
     color: aqua;
     font-size: 70px;
     font-weight: bold;
@@ -30,6 +31,7 @@ span {
     border: 4px solid rgb(248, 0, 0);
     border-radius: 15px;
     box-shadow: 0px 0px 45px rgb(255, 255, 255);
+    width: 80vw;
 }
 
 .hb-button {
@@ -51,13 +53,14 @@ span {
 .hb-story {
     font-size: 25px;
     font-weight: bold;
+    text-align: center;
 }
 
 .hb-card {
     display: none;
     margin-top: 50px;
     margin-bottom: 100px;
-    width: 70vh;
+    width: 70vw;
     border: 3px solid white;
     padding: 40px;
     border-radius: 20px;
@@ -67,7 +70,7 @@ span {
 .hb-open {
     margin-top: 50px;
     margin-bottom: 100px;
-    width: 70vh;
+    width: 70vw;
     border: 3px solid white;
     padding: 40px;
     border-radius: 20px;
@@ -75,11 +78,12 @@ span {
 }
 
 .hb-name {
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 .hb-wrongTime {
     display: none;
     margin-top: 40px;
     font-size: 30px;
+    text-align: center;
 }
